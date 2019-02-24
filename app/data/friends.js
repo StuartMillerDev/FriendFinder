@@ -1,3 +1,6 @@
+console.log("Loaded friends.js");
+
+
 var friends=[
   {
   "name":"Ahmed",
