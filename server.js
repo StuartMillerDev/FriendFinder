@@ -3,7 +3,7 @@ var path=require("path");
 var PORT=process.env.PORT || 8080;
 var app=express();
 // app.use(express.static("/app/public"));
-app.use("/public", express.static(__dirname + '/app/public'));
+app.use(express.static(__dirname + '/app/public'));
 // Catch all
 app.get("/",function(req,res){
   res.sendFile(path.join(__dirname, "/app/public/home.html"));
